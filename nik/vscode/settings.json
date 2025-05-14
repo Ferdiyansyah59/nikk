@@ -1,0 +1,44 @@
+{
+  // Prettier sebagai default formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  // Format dengan Prettier untuk berbagai jenis file
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // Jalankan auto-fix dari ESLint saat save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  // Prettier hanya aktif jika ada config file (baik .prettierrc atau prettier.config.js)
+  "prettier.requireConfig": true,
+
+  // Pastikan Prettier membaca config yang kamu buat
+  "prettier.configPath": ".prettierrc",
+
+  // Nonaktifkan format dari ESLint extension biar gak bentrok
+  "eslint.format.enable": false,
+
+  // Optional: Matikan autosave biar kamu tahu kapan Prettier bekerja
+  "files.autoSave": "off"
+}
